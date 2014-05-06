@@ -10,6 +10,7 @@ rubies.each do |config|
     user config["user"]
     group config["group"]
     gems config["gems"]
+    patch attributes['patch']
 
     if config["reinstall"]
       action :reinstall
